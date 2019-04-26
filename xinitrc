@@ -6,4 +6,3 @@ while true; do
    sleep 1m    # Update time every minute
 done &
 exec dwm
-exec dwm
