@@ -56,15 +56,15 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "urxvt", NULL };
+static const char *termcmd[]  = { "urxvtc", NULL };
 static const char *animepape[] = {"feh", "--randomize", "--bg-fill", "/home/elijah/etc/wallpaper",NULL};
 static const char *hpape[] = {"feh", "--randomize", "--bg-fill", "/home/elijah/etc/wallpaper/h",NULL};
 static const char *bardpape[] = {"feh", "--randomize", "--bg-fill", "/home/elijah/etc/wallpaper/Bard",NULL};
 static const char *emergencypape[] = {"feh", "--bg-scale", "/home/elijah/etc/wallpaper/black",NULL};
 static const char *printscreen[] = {"scrot", "/home/elijah/etc/printscreen/printscreen.png",NULL};
 static const char *mute [] = {"amixer", "sset", "'Master'", "0%", NULL};
-static const char *vplus [] = {"amixer", "-D","pulse","sset", "'Master'", "5%-", NULL};
-static const char *vminus [] = {"amixer", "-D","pulse","sset", "'Master'", "5%+", NULL};
+static const char *vplus [] = {"amixer", "-D","pulse","sset", "'Master'", "5%+", NULL};
+static const char *vminus [] = {"amixer", "-D","pulse","sset", "'Master'", "5%-", NULL};
 static const char *lightminus [] = {"xbacklight", "-dec" , "20", NULL};
 static const char *lightplus [] = {"xbacklight", "-inc" , "20", NULL};
 
