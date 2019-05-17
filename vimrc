@@ -6,3 +6,5 @@ set tabstop =4
 "treat .oc files like cpp files (enables cpp syntax highlighting)
 au BufNewFile,BufRead *.oc set filetype=cpp
 syntax on
+"enable tabs for makefiles
+autocmd FileType make setlocal noexpandtab
