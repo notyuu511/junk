@@ -6,5 +6,5 @@ au BufNewFile,BufRead *.oc set filetype=cpp
 " treat .build files like py files (meson)
 au BufNewFile,BufRead *.build set filetype=python
 
-" pathogen shit
+" pathogen stuff
 execute pathogen#infect()
