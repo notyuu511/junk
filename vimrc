@@ -1,10 +1,10 @@
 set clipboard=unnamedplus
 set autoindent
-set wildmenu
-set expandtab
-set tabstop =4
-"treat .oc files like cpp files (enables cpp syntax highlighting)
+set relativenumber
+" treat .oc files (cmps104a) like C++ files (enables C++-syntax highlighting) 
 au BufNewFile,BufRead *.oc set filetype=cpp
-syntax on
-"enable tabs for makefiles
-autocmd FileType make setlocal noexpandtab
+" treat .build files like py files (meson)
+au BufNewFile,BufRead *.build set filetype=python
+
+" pathogen shit
+execute pathogen#infect()
