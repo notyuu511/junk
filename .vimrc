@@ -9,5 +9,8 @@ syntax on
 "enable tabs for makefiles
 autocmd FileType make setlocal noexpandtab
 
+" nerdtree toggle
+map <C-n> :NERDTreeToggle<CR>
+
 "pathogen path manager
 execute pathogen#infect()
