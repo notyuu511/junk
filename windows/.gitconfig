@@ -1,0 +1,6 @@
+[diff]
+    tool = vimdiff
+    prompt = false
+[user]
+	email = ElijahC@supermicro.com
+	name = Elijah Cordova
