@@ -133,3 +133,10 @@ function vimbuf() {
 function run() {
   "$@">/dev/null 2>&1 & disown
 }
+
+# grep for vfr,hfr,sd,and uni in cwd and open in vim buffer
+function grepo() {
+  grep -ri  --include=\*.{vfr,hfr,sd,uni} "$@" . | vim -
+}
+
+alias branches="git branch -a > /tmp/branches && vim /tmp/branches"
