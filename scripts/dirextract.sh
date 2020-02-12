@@ -14,7 +14,7 @@ for args in "$@"; do
   if [[ -d "$args" ]]; then
    for tars in "$args"/*.tar; do
      echo "processing $tars \n\n"
-     tar xvf "$tars"
+     tar xvf "$tars" -C "$EXTRACT_DIRECTORY"
    done
 
    for others in "$args"/*.{zip,7z,rar}; do
@@ -25,7 +25,7 @@ for args in "$@"; do
   elif [[ -f "$args" ]]; then
     echo "processing $args \n\n"
     if [[ $args =~ \.tar ]]; then
-      tar xvf "$args"
+      tar xvf "$args" -C "$EXTRACT_DIRECTORY"
     elif [[ $args =~ \.[zip|7z|rar] ]]; then
       7z  x -o"$EXTRACT_DIRECTORY" "$args"
     fi
